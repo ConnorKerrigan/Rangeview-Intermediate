@@ -1,0 +1,32 @@
+
+#logo{
+    display: block;
+    margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+    line-height: 0;
+    height: 10vh;
+    padding: .5vw;
+}
+
+
+
+.parallaxSection{
+    /*background-image: url("../Images/BirdEyeCropped.jpeg");*/
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    overflow: hidden;
+    
+}
+
+.parallaxInner {
+    
+    padding: 100px;
+    margin-top: 150px;
+}
+
+.container{
+    border-left: 10px solid rgb(134, 0, 0);
+}
