@@ -30,3 +30,11 @@
 .container{
     border-left: 10px solid rgb(134, 0, 0);
 }
+
+.dropdown-menu{
+    background-image: url("../Images/guy.jpg");   
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
