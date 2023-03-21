@@ -28,7 +28,7 @@
   
 
 <!--navbar-->
-<nav class="navbar position-absolute w-100 fixed-top navbar-expand-sm bg-dark navbar-dark sticky-top">
+<nav class="navbar w-100 fixed-top navbar-expand-sm bg-dark navbar-dark ">
   <a class="navbar-brand d-lg-none" href="Index.html"><img src="../Images/Text-Logo-Dark-Glow.png" id="logo"></img></a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -38,7 +38,7 @@
       <ul class="navbar-nav list-inline text-center d-flex justify-content-center align-items-center">
         <li class="nav-item dropdown m-3 h2">
           <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown">About Us</a>
-          <ul class="dropdown-menu justify-items-stretch">
+          <ul class="dropdown-menu justify-items-stretch animate slideIn">
             <li><a class="dropdown-item" href="#">Staff</a></li>
             <li><a class="dropdown-item" href="AboutUs.html">Our School</a></li>
             <li><button class="dropdown-item" type="button" data-bs-toggle="offcanvas" data-bs-target="#contactUs">
@@ -48,20 +48,20 @@
         </li>
         <li class="nav-item dropdown m-3 h2">
           <a class="nav-link " href="Enrolment.html" role="button" data-bs-toggle="dropdown">Enrolment</a>
-          <ul class="dropdown-menu">
+          <ul class="dropdown-menu animate slideIn">
             <li><a class="dropdown-item" href="Enrolment.html">Location</a></li>
             <li><a class="dropdown-item" href="#">Another link</a></li>
             <li><a class="dropdown-item" href="#">A third link</a></li>
           </ul>
         </li>
 
-
+        <!--hidden on mobile-->
         <a class="d-none d-lg-block" href="Index.html"><img src="../Images/Text-Logo-Dark-Glow.png" id="logo"></img> 
         </a>
 
         <li class="nav-item dropdown m-3 h2">
           <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown">School Info</a>
-          <ul class="dropdown-menu">
+          <ul class="dropdown-menu animate slideIn">
             <li><a class="dropdown-item" href="#">Link</a></li>
             <li><a class="dropdown-item" href="#">Another link</a></li>
             <li><a class="dropdown-item" href="#">A third link</a></li>
@@ -69,7 +69,7 @@
         </li>  
         <li class="nav-item dropdown m-3 h2">
           <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
-          <ul class="dropdown-menu">
+          <ul class="dropdown-menu animate slideIn">
             <li><a class="dropdown-item" href="#">Link</a></li>
             <li><a class="dropdown-item" href="#">Another link</a></li>
             <li><a class="dropdown-item" href="PB4L.html">PB4L</a></li>
@@ -98,12 +98,13 @@
   <div class="row">
     <div class="col-sm-8">
       <h3>Message from the principal</h3>
+      <img class="d-lg-none " src="../Images/Portrait_placeholder.png" alt="" style="width: 40%; object-fit: cover; float:right;">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim metus tortor, sit amet ullamcorper metus elementum sit amet. Morbi lectus magna, commodo eu vulputate ac, rutrum in mauris. Donec ornare, diam id sodales facilisis, felis neque vulputate massa, id condimentum leo enim eu sem. Maecenas quam nunc, elementum finibus tortor vehicula, porttitor commodo urna. Aenean congue, dolor ut fermentum tincidunt, felis elit bibendum risus, at vehicula est diam quis mi. Nullam tempor fringilla lorem eget vulputate. Suspendisse potenti. Etiam a pharetra lacus, eget consectetur mauris. Donec iaculis congue tellus. Morbi fermentum scelerisque ex et mollis. Etiam vulputate ipsum ac cursus rhoncus. Fusce semper pulvinar iaculis. Cras eleifend nec nulla pellentesque congue. Phasellus eu elementum purus, et consequat leo.
 
         Aliquam malesuada finibus egestas. Praesent velit eros, eleifend et imperdiet eu, convallis non velit. Donec malesuada, ligula eget eleifend faucibus, arcu tellus sodales nulla, ut ultrices augue arcu a velit. Sed quis lorem vel lectus laoreet lobortis placerat et nisl. Integer pretium risus nec erat mollis vestibulum. Etiam molestie libero vitae dui rutrum ornare. Curabitur vulputate, elit eget mattis pulvinar, risus enim auctor augue, id lobortis lectus purus sed elit. Vivamus pretium arcu quis diam porttitor lobortis. Mauris et venenatis tellus. Nam sodales, massa id feugiat posuere, dui tortor dictum lorem, et pellentesque nisi dolor ac metus. Duis venenatis ipsum ac aliquam dictum. Ut felis quam, efficitur id ultricies sit amet, vestibulum et nibh. Nullam euismod ac dolor sit amet fringilla.</p>
     </div>
     <div class="col-sm-4">
-      <img src="../Images/Portrait_placeholder.png" alt="" style="width: 100%; object-fit: cover;">
+      <img class="d-none d-lg-block" src="../Images/Portrait_placeholder.png" alt="" style="width: 100%; object-fit: cover;">
     </div>
   </div>
 </div>
