@@ -12,9 +12,17 @@ body{
     background-color:white
 }
 
-nav{
-
+h1{
+ color: #333b46;
+ margin: 25px 20px;
 }
+h1:after {
+   content: '';
+   display: block;
+   position: relative;
+   width: 10%;
+   border: 2px solid var(--auburn);
+   margin-top: 8px; }
 
 #logo{
     display: block;
@@ -26,7 +34,10 @@ nav{
     padding: .5vw;
 }
 
-
+.removeTop {
+    overflow: hidden;
+    position: relative;
+}
 
 .parallaxSection{
     /*background-image: url("../Images/BirdEyeCropped.jpeg");*/
@@ -46,19 +57,66 @@ nav{
 
 .container div div p{
     padding-left: 10px;
-    border-left: 5px solid rgb(134, 0, 0);
+    border-left: 5px solid var(--auburn);
 }
 
 .dropdown-menu{
-    background-color: var(--xanthous)   
+    background-color: var(--auburn);
 }
 
 .dropdown:hover .dropdown-menu {
     display: block;
-    color: black;
+}
+
+.dropdown-item{
+    color: var(--platinum);
 }
 
 .dropdown-item:hover{
-    background-color: var(--fireEngine);
-    color: white;
+    background-color: var(--xanthous);
+    color: var(--licorice);
 }
+
+@media (min-width: 200px) {
+    .animate {
+      animation-duration: 0.3s;
+      -webkit-animation-duration: 0.3s;
+      animation-fill-mode: both;
+      -webkit-animation-fill-mode: both;
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateY(1rem);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0rem);
+      opacity: 1;
+    }
+    0% {
+      transform: translateY(1rem);
+      opacity: 0;
+    }
+  }
+  
+  @-webkit-keyframes slideIn {
+    0% {
+      -webkit-transform: transform;
+      -webkit-opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      -webkit-opacity: 1;
+    }
+    0% {
+      -webkit-transform: translateY(1rem);
+      -webkit-opacity: 0;
+    }
+  }
+  
+  .slideIn {
+    -webkit-animation-name: slideIn;
+    animation-name: slideIn;
+  }
