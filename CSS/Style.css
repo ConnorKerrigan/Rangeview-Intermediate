@@ -12,9 +12,17 @@ body{
     background-color:white
 }
 
-nav{
-
+h1{
+ color: #333b46;
+ margin: 25px 20px;
 }
+h1:after {
+   content: '';
+   display: block;
+   position: relative;
+   width: 10%;
+   border: 2px solid var(--auburn);
+   margin-top: 8px; }
 
 #logo{
     display: block;
