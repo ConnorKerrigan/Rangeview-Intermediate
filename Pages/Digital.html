@@ -10,7 +10,8 @@
 </head>
 <body>
 
-<div class="offcanvas offcanvas-bottom" id="contactUs">
+<!--Contact us offcanvas-->
+<div class="offcanvas offcanvas-bottom h-auto" id="contactUs">
   <div class="offcanvas-header">
     <h1 class="offcanvas-title">Heading</h1>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
@@ -24,11 +25,8 @@
   </div>
 </div>
 
-
-  
-
 <!--navbar-->
-<nav class="navbar position-absolute w-100 fixed-top navbar-expand-sm bg-dark navbar-dark sticky-top">
+<nav class="navbar w-100 fixed-top navbar-expand-sm bg-dark navbar-dark ">
   <a class="navbar-brand d-lg-none" href="Index.html"><img src="../Images/Text-Logo-Dark-Glow.png" id="logo"></img></a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -38,9 +36,10 @@
       <ul class="navbar-nav list-inline text-center d-flex justify-content-center align-items-center">
         <li class="nav-item dropdown m-3 h2">
           <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown">About Us</a>
-          <ul class="dropdown-menu justify-items-stretch">
-            <li><a class="dropdown-item" href="#">Staff</a></li>
+          <ul class="dropdown-menu justify-items-stretch animate slideIn">
+            <li><a class="dropdown-item" href="Staff.html">Staff</a></li>
             <li><a class="dropdown-item" href="AboutUs.html">Our School</a></li>
+            <li><a class="dropdown-item" href="BoardOfTrustees.html">BoardOfTrustees</a></li>
             <li><button class="dropdown-item" type="button" data-bs-toggle="offcanvas" data-bs-target="#contactUs">
               CONTACT US
             </button></li>
@@ -48,28 +47,28 @@
         </li>
         <li class="nav-item dropdown m-3 h2">
           <a class="nav-link " href="Enrolment.html" role="button" data-bs-toggle="dropdown">Enrolment</a>
-          <ul class="dropdown-menu">
+          <ul class="dropdown-menu animate slideIn">
             <li><a class="dropdown-item" href="Enrolment.html">Location</a></li>
             <li><a class="dropdown-item" href="#">Another link</a></li>
             <li><a class="dropdown-item" href="#">A third link</a></li>
           </ul>
         </li>
 
-
+        <!--hidden on mobile-->
         <a class="d-none d-lg-block" href="Index.html"><img src="../Images/Text-Logo-Dark-Glow.png" id="logo"></img> 
         </a>
 
         <li class="nav-item dropdown m-3 h2">
           <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown">School Info</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Link</a></li>
-            <li><a class="dropdown-item" href="#">Another link</a></li>
+          <ul class="dropdown-menu animate slideIn">
+            <li><a class="dropdown-item" href="Uniform.html">Uniform</a></li>
+            <li><a class="dropdown-item" href="Digital.html">Digital</a></li>
             <li><a class="dropdown-item" href="#">A third link</a></li>
           </ul>
         </li>  
         <li class="nav-item dropdown m-3 h2">
-          <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown">News Letter</a>
-          <ul class="dropdown-menu">
+          <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown">Link</a>
+          <ul class="dropdown-menu animate slideIn">
             <li><a class="dropdown-item" href="#">Link</a></li>
             <li><a class="dropdown-item" href="#">Another link</a></li>
             <li><a class="dropdown-item" href="PB4L.html">PB4L</a></li>
