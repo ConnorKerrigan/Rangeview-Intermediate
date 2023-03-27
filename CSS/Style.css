@@ -24,6 +24,18 @@ h1:after {
    border: 2px solid var(--auburn);
    margin-top: 8px; }
 
+.altSection {
+  background-color: var(--fireEngine);
+  color: var(--platinum);
+}
+
+.altSection  h1 {
+  color: var(--platinum);
+}
+.altSection  h1:after{
+    border: 2px solid var(--xanthous);
+}
+
 #logo{
     display: block;
     margin: 0;
