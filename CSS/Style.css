@@ -12,6 +12,10 @@ body{
     background-color:white
 }
 
+p{
+  font-size: larger;
+}
+
 h1{
  color: #333b46;
  margin: 25px 20px;
@@ -25,12 +29,15 @@ h1:after {
    margin-top: 8px; }
 
 .altSection {
-  background-color: var(--fireEngine);
+  background-color: var(--auburn);
   color: var(--platinum);
 }
-
+.altSection div div div p{
+  padding-left: 10px;
+  border-left: 5px solid rgb(138, 32, 32);
+}
 .altSection  h1 {
-  color: var(--platinum);
+  color: white;
 }
 .altSection  h1:after{
     border: 2px solid var(--xanthous);
@@ -49,6 +56,13 @@ h1:after {
 .removeTop {
     overflow: hidden;
     position: relative;
+}
+
+.fixedParallax{
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .parallaxSection{
@@ -126,9 +140,34 @@ h1:after {
       -webkit-transform: translateY(1rem);
       -webkit-opacity: 0;
     }
+
   }
-  
+
+
   .slideIn {
     -webkit-animation-name: slideIn;
     animation-name: slideIn;
+  }
+
+  .depress {
+    text-decoration: none;
+    color: var(--platinum);
+    border-left: 0px solid rgb(138, 32, 32);
+    border-top: 0px solid rgb(138, 32, 32);
+    transition: 0.2s;
+  }
+
+  .depress:hover{
+    color: var(--platinum);
+    border-top: 10px solid rgb(138, 32, 32);
+    border-left: 10px solid rgb(138, 32, 32);
+    margin:-5px;
+  }
+
+  .depress img{
+    float: left;
+  }
+  .depress h2{
+    text-align: center;
+    margin-top: 20px;
   }
