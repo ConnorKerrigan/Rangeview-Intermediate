@@ -159,9 +159,10 @@ h1:after {
 
   .depress:hover{
     color: var(--platinum);
-    border-top: 10px solid rgb(138, 32, 32);
-    border-left: 10px solid rgb(138, 32, 32);
-    margin:-5px;
+    border-top: 6px solid rgb(138, 32, 32);
+    border-left: 6px solid rgb(104, 22, 22);
+    margin:-3px;
+    display: block;
   }
 
   .depress img{
