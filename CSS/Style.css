@@ -1,174 +1,207 @@
 :root {
-    --auburn: rgb(160, 36, 36);
-    --fireEngine: rgb(187, 54, 40);
-    --imperialRed: rgb(231, 46, 53);
-    --xanthous: rgb(234, 180, 9);
-    --saffron: rgb(239, 201, 65);
-    --platinum: rgb(233, 227, 227);
-    --licorice: rgb(35, 24, 21);
-  }
-
-body{
-    background-color:white
+  --auburn: rgb(160, 36, 36);
+  --fireEngine: rgb(187, 54, 40);
+  --imperialRed: rgb(231, 46, 53);
+  --xanthous: rgb(234, 180, 9);
+  --saffron: rgb(239, 201, 65);
+  --platinum: rgb(233, 227, 227);
+  --licorice: rgb(35, 24, 21);
 }
 
-p{
+body {
+  background-color: white;
+  padding-top: 10vh
+}
+
+p {
   font-size: larger;
 }
 
-h1{
- color: #333b46;
- margin: 25px 20px;
+h1 {
+  color: #333b46;
+  margin: 25px 20px;
 }
+
 h1:after {
-   content: '';
-   display: block;
-   position: relative;
-   width: 10%;
-   border: 2px solid var(--auburn);
-   margin-top: 8px; }
+  content: '';
+  display: block;
+  position: relative;
+  width: 10%;
+  border: 2px solid var(--auburn);
+  margin-top: 8px;
+}
 
 .altSection {
   background-color: var(--auburn);
   color: var(--platinum);
 }
-.altSection div div div p{
+
+.altSection div div div p {
   padding-left: 10px;
   border-left: 5px solid rgb(138, 32, 32);
 }
-.altSection  h1 {
+
+.altSection h1 {
   color: white;
 }
-.altSection  h1:after{
-    border: 2px solid var(--xanthous);
+
+.altSection h1:after {
+  border: 2px solid var(--xanthous);
 }
 
-#logo{
-    display: block;
-    margin: 0;
+#logo {
+  display: block;
+  margin: 0;
   margin-left: auto;
   margin-right: auto;
-    line-height: 0;
-    height: 10vh;
-    padding: .5vw;
+  line-height: 0;
+  height: 10vh;
+  padding: .5vw;
 }
 
 .removeTop {
-    overflow: hidden;
-    position: relative;
+  overflow: hidden;
+  position: relative;
 }
 
-.fixedParallax{
+.fixedParallax {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.parallaxSection{
-    /*background-image: url("../Images/BirdEyeCropped.jpeg");*/
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: top;
-    overflow: hidden;
-    
+.parallaxSection {
+  /*background-image: url("../Images/BirdEyeCropped.jpeg");*/
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  overflow: hidden;
+
 }
 
 .parallaxInner {
-    
-    padding: 100px;
-    margin-top: 150px;
+  width: auto;
+  margin-right: auto; 
+  margin-left: auto;
+  padding: 100px;
+  margin-top: 150px;
+  color: white;
 }
 
-.container div div p{
-    padding-left: 10px;
-    border-left: 5px solid var(--auburn);
+.container div div p {
+  padding-left: 10px;
+  border-left: 5px solid var(--auburn);
 }
 
-.dropdown-menu{
-    background-color: var(--auburn);
+.dropdown-menu {
+  background-color: var(--auburn);
 }
 
 .dropdown:hover .dropdown-menu {
-    display: block;
+  display: block;
 }
 
-.dropdown-item{
-    color: var(--platinum);
+.dropdown-item {
+  color: var(--platinum);
 }
 
-.dropdown-item:hover{
-    background-color: var(--xanthous);
-    color: var(--licorice);
+.dropdown-item:hover {
+  background-color: var(--xanthous);
+  color: var(--licorice);
 }
 
 @media (min-width: 200px) {
-    .animate {
-      animation-duration: 0.3s;
-      -webkit-animation-duration: 0.3s;
-      animation-fill-mode: both;
-      -webkit-animation-fill-mode: both;
-    }
+  .animate {
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
   }
-  
-  @keyframes slideIn {
-    0% {
-      transform: translateY(1rem);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0rem);
-      opacity: 1;
-    }
-    0% {
-      transform: translateY(1rem);
-      opacity: 0;
-    }
-  }
-  
-  @-webkit-keyframes slideIn {
-    0% {
-      -webkit-transform: transform;
-      -webkit-opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateY(0);
-      -webkit-opacity: 1;
-    }
-    0% {
-      -webkit-transform: translateY(1rem);
-      -webkit-opacity: 0;
-    }
+}
 
+@keyframes slideIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
   }
 
-
-  .slideIn {
-    -webkit-animation-name: slideIn;
-    animation-name: slideIn;
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
   }
 
-  .depress {
-    text-decoration: none;
-    color: var(--platinum);
-    border-left: 0px solid rgb(138, 32, 32);
-    border-top: 0px solid rgb(138, 32, 32);
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: transform;
+    -webkit-opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
+
+  0% {
+    -webkit-transform: translateY(1rem);
+    -webkit-opacity: 0;
+  }
+
+}
+
+
+.slideIn {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+}
+
+.depress {
+  text-decoration: none;
+  color: var(--platinum);
+  border-left: 0px solid rgb(138, 32, 32);
+  border-top: 0px solid rgb(138, 32, 32);
+  transition: 0.2s;
+}
+
+.depress:hover {
+  color: var(--platinum);
+  border-top: 6px solid rgb(138, 32, 32);
+  border-left: 6px solid rgb(104, 22, 22);
+  margin: -3px;
+  display: block;
+}
+
+.depress img {
+  float: left;
+}
+
+.depress h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (min-width: 1199.98px) {
+  .storeItem div {
+    margin-bottom: 32%;
+  }
+
+  .storeItem div div {
+    position: absolute;
+    width: 8%;
     transition: 0.2s;
   }
 
-  .depress:hover{
-    color: var(--platinum);
-    border-top: 6px solid rgb(138, 32, 32);
-    border-left: 6px solid rgb(104, 22, 22);
-    margin:-3px;
-    display: block;
-  }
+  .storeItem div div:hover {
+    width: 10%;
+    position: absolute;
+    transform: translate(-10%, -10%);
 
-  .depress img{
-    float: left;
   }
-  .depress h2{
-    text-align: center;
-    margin-top: 20px;
-  }
+}
