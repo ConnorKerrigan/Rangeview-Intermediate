@@ -162,6 +162,56 @@ h1:after {
   animation-name: slideIn;
 }
 
+@media (min-width: 200px) {
+  .animateSlow {
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+  }
+}
+
+@keyframes slideInLong {
+  0% {
+    transform: translateY(2rem);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+
+  0% {
+    transform: translateY(2rem);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideInLong {
+  0% {
+    -webkit-transform: transform;
+    -webkit-opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
+
+  0% {
+    -webkit-transform: translateY(2rem);
+    -webkit-opacity: 1;
+  }
+
+}
+
+
+.slideInLong {
+  -webkit-animation-name: slideInLong;
+  animation-name: slideInLong;
+}
+
 .depress {
   text-decoration: none;
   color: var(--platinum);
@@ -204,4 +254,11 @@ h1:after {
     transform: translate(-10%, -10%);
 
   }
+}
+
+
+.risePortrait{
+  width: 25vw;
+  margin-right:-10px;
+  padding:0px;
 }

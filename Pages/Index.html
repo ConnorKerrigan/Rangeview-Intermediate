@@ -270,10 +270,11 @@
 
   <div class="container mt-5">
     <h1>Our R.I.S.E values</h1>
-    <!-- Carousel -->
+    <!--
+
     <div id="riseValueCarousel" class="carousel slide" data-bs-ride="carousel">
 
-      <!--Indicators/dots-->
+
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#riseValueCarousel" data-bs-slide-to="0" class="active"></button>
         <button type="button" data-bs-target="#riseValueCarousel" data-bs-slide-to="1"></button>
@@ -281,7 +282,7 @@
         <button type="button" data-bs-target="#riseValueCarousel" data-bs-slide-to="3"></button>
       </div>
 
-      <!-- The slideshow/carousel -->
+
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="../Images/Rise_Poster-Respect.jpg" alt="Rise_Poster-Respect" class="d-none d-sm-block"
@@ -309,16 +310,20 @@
         </div>
       </div>
 
-      <!-- Left and right controls/icons -->
+
       <button class="carousel-control-prev" type="button" data-bs-target="#riseValueCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon"></span>
       </button>
       <button class="carousel-control-next" type="button" data-bs-target="#riseValueCarousel" data-bs-slide="next">
         <span class="carousel-control-next-icon"></span>
       </button>
-    </div>
-  </div>
+    </div>-->
 
+  </div>
+    <img src="../Images/Rise values portrait/1.png" class="risePortrait">
+    <img src="../Images/Rise values portrait/2.png" class="risePortrait">
+    <img src="../Images/Rise values portrait/3.png" class="risePortrait">
+    <img src="../Images/Rise values portrait/4.png" class="risePortrait">
 
 
 
@@ -350,6 +355,22 @@
 
   </div>
 
+  <script>
+    const startAnimation = (entries, observer) => {
+  entries.forEach(entry => {
+    entry.target.classList.toggle("animateSlow", entry.isIntersecting);
+    entry.target.classList.toggle("slideInLong", entry.isIntersecting);
+  });
+};
+
+const observer = new IntersectionObserver(startAnimation);
+const options = { root: document.getElementById("test"), rootMargin: '0px', threshold: 0.1 }; 
+
+const elements = document.querySelectorAll('.risePortrait');
+elements.forEach(el => {
+  observer.observe(el, options);
+});
+  </script>
 
   <script src="../Js/Parallax.js"></script>
   <script src="../Js/Script.js"></script>
