@@ -20,3 +20,16 @@ $.ajax("Footer.html", {
         $("#Footer").html(response);
     }
 }); 
+
+
+// The function actually applying the offset
+function offsetAnchor() {
+    if(location.hash.length !== 0) {
+        window.scrollTo(window.scrollX, window.scrollY - 300);
+    }
+}
+
+
+window.addEventListener("hashchange", offsetAnchor);
+
+window.setTimeout(offsetAnchor, 1); 

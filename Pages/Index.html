@@ -118,57 +118,80 @@
     </div>
     <div class="row">
       <div class="col-sm-4 p-4" style="background-color: var(--licorice); color: var(--platinum);">
-        <h2 class="m-4">School Hours</h2>
-        <hr>
+        
         <div class="row">
-          <div class="col-sm-6">
-            <ul>
-              <p>8:40 – 9:10 </p>
-              <hr>
-              <p><strong>9:10 – 10:15</strong></p>
-              <hr>
-              <p>10:15 – 10:40</p>
-              <hr>
-              <p><strong>10:40 – 11:45 </strong></p>
-              <hr>
-              <p><strong>11:45 – 12:50</strong></p>
-              <hr>
-              <p>12:50 – 1:00 </p>
-              <hr>
-              <p>1:00 – 1:45 </p>
-              <hr>
-              <p>1:45 – 1:55 </p>
-              <hr>
-              <p><strong>1:55 – 3:00</strong></p>
-              <hr>
-              <p>3:00 – 3:10 </p>
-            </ul>
+          <h2 class="m-4">School Hours</h2>
+          <hr>
+          <div class="row">
+            <div class="col-sm-6">
+            <p><strong>8:40 – 9:10 </strong></p></div>
+            <div class="col-sm-6">
+            <p style="border: none;">Homeroom</p></div>
           </div>
-          <div class="col-sm-6">
-            <p style="border: none;">Homeroom</p>
-            <hr>
-            <p style="border: none;"><strong>Period one</strong></p>
-            <hr>
-            <p style="border: none;">Interval</p>
-            <hr>
-            <p style="border: none;"><strong>Period two</strong></p>
-            <hr>
-            <p style="border: none;"><strong>Period three</strong></p>
-            <hr>
-
-
-
-
-            <p style="border: none;">Sit down lunch</p>
-            <hr>
-            <p style="border: none;">Lunch</p>
-            <hr>
-            <p style="border: none;">Homeroom</p>
-            <hr>
-            <p style="border: none;"><strong>Period Four</strong></p>
-            <hr>
-            <p style="border: none;">Homeroom</p>
+          <hr>
+          <div class="row">
+            <div class="col-sm-6">
+            <p><strong>9:10 – 10:15</strong></p></div>
+            <div class="col-sm-6">
+            <p style="border: none;">Period one</p></div>
           </div>
+          <hr>
+          <div class="row">
+            <div class="col-sm-6">
+            <p><strong>10:15 – 10:40</strong></p></div>
+            <div class="col-sm-6">
+            <p style="border: none;">Interval</p></div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-sm-6">
+            <p><strong>10:40 – 11:45 </strong></p></div>
+            <div class="col-sm-6">
+            <p style="border: none;">Period two</p></div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-sm-6">
+            <p><strong>11:45 – 12:50</strong></p></div>
+            <div class="col-sm-6">
+            <p style="border: none;">Period three</p></div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-sm-6">
+            <p><strong>12:50 – 1:00 </strong></p></div>
+            <div class="col-sm-6">
+            <p style="border: none;">Sit down lunch</p></div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-sm-6">
+            <p><strong>1:00 – 1:45 </strong></p></div>
+            <div class="col-sm-6">
+            <p style="border: none;">Lunch</p></div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-sm-6">
+            <p><strong>1:45 – 1:55 </strong></p></div>
+            <div class="col-sm-6">
+            <p style="border: none;">Homeroom</p></div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-sm-6">
+            <p><strong>1:55 – 3:00</strong></p></div>
+            <div class="col-sm-6">
+            <p style="border: none;">Period Four</p></div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-sm-6">
+            <p><strong>3:00 – 3:10 </strong></p></div>
+            <div class="col-sm-6">
+            <p style="border: none;">Homeroom</p></div>
+          </div>
+          <hr>
         </div>
       </div>
       <div class="col-sm-4 pt-4 p-5">
@@ -320,11 +343,12 @@
     </div>-->
 
   </div>
+  <div class="riseContainer">
     <img src="../Images/Rise values portrait/1.png" class="risePortrait">
     <img src="../Images/Rise values portrait/2.png" class="risePortrait">
     <img src="../Images/Rise values portrait/3.png" class="risePortrait">
     <img src="../Images/Rise values portrait/4.png" class="risePortrait">
-
+  </div>
 
 
 
@@ -364,9 +388,9 @@
 };
 
 const observer = new IntersectionObserver(startAnimation);
-const options = { root: document.getElementById("test"), rootMargin: '0px', threshold: 0.1 }; 
+const options = { root: null, rootMargin: '0px', threshold: 1 }; 
 
-const elements = document.querySelectorAll('.risePortrait');
+const elements = document.querySelectorAll('.riseContainer');
 elements.forEach(el => {
   observer.observe(el, options);
 });

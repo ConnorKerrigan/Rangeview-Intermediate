@@ -66,7 +66,6 @@ h1:after {
 
 .fixedParallax {
   background-attachment: fixed;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -163,17 +162,29 @@ h1:after {
 }
 
 @media (min-width: 200px) {
-  .animateSlow {
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
+  .animateSlow .risePortrait {
+    animation-duration: 0.7s;
+    -webkit-animation-duration: 0.7s;
     animation-fill-mode: both;
     -webkit-animation-fill-mode: both;
+  }
+  .animateSlow .risePortrait:nth-child(1){
+    animation-delay: 00ms;
+  }
+  .animateSlow .risePortrait:nth-child(2){
+    animation-delay: 50ms;
+  }
+  .animateSlow .risePortrait:nth-child(3){
+    animation-delay: 100ms;
+  }
+  .animateSlow .risePortrait:nth-child(4){
+    animation-delay: 150ms;
   }
 }
 
 @keyframes slideInLong {
   0% {
-    transform: translateY(2rem);
+    transform: translateY(4rem);
     opacity: 1;
   }
 
@@ -183,14 +194,14 @@ h1:after {
   }
 
   0% {
-    transform: translateY(2rem);
+    transform: translateY(4rem);
     opacity: 1;
   }
 }
 
 @-webkit-keyframes slideInLong {
   0% {
-    -webkit-transform: transform;
+    -webkit-transform: translateY(4rem);
     -webkit-opacity: 1;
   }
 
@@ -200,16 +211,20 @@ h1:after {
   }
 
   0% {
-    -webkit-transform: translateY(2rem);
+    -webkit-transform: translateY(4rem);
     -webkit-opacity: 1;
   }
 
 }
 
 
-.slideInLong {
+.slideInLong .risePortrait {
   -webkit-animation-name: slideInLong;
   animation-name: slideInLong;
+}
+
+.slideInLong:nth-child(1){
+  animation-delay: 500ms;
 }
 
 .depress {
@@ -259,6 +274,14 @@ h1:after {
 
 .risePortrait{
   width: 25vw;
-  margin-right:-10px;
+  margin:0px;
+  margin-right: -10px;
   padding:0px;
+  transform: translateY(4rem);
+}
+
+.riseContainer{
+  width: 100%;
+  margin:0;
+  padding:0;
 }
