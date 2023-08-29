@@ -1,41 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <title>Site</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src = 'https://code.jquery.com/jquery-3.6.3.min.js'></script>
-  </head>
-<body>
+    <script src='https://code.jquery.com/jquery-3.6.3.min.js'></script>
+</head>
+
+<body style="padding-top: 8vh;">
     <div id="TopContent">
 
     </div>
 
-    <div class="fixedParallax" style="background-image:     linear-gradient(to right, white, rgba(160, 36, 36, 0.73)),
+    <div class="fixedParallax" style="background-image:     linear-gradient(to right, white, rgba(255, 62, 62, 0.336)),
     url('../Images/IMG_1684.jpeg'); background-position: right; margin-top: -11px;">
 
-    <div class="container mt-5">
-        <div class="row" id="SportInfo">
-            <div class="col-sm-6">
-                <h1>Sport at Rangeview</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore impedit animi officiis dolorem tempora quis delectus soluta cum corporis ex tenetur magnam, saepe et officia molestias nesciunt repellat mollitia at.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti laudantium numquam voluptates eligendi provident minima error, omnis ipsum nisi minus, porro optio molestias eaque obcaecati eum incidunt illo. Minus, animi.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum eius, aperiam maxime harum omnis nemo molestiae qui at, ea hic ducimus dignissimos esse! Deserunt inventore et odit magni molestiae veniam!
-                </p>
+        <div class="container mt-5">
+            <div class="row" id="SportInfo">
+                <div class="col-sm-6">
+                    <h1>Sport at Rangeview</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore impedit animi officiis dolorem
+                        tempora quis delectus soluta cum corporis ex tenetur magnam, saepe et officia molestias nesciunt
+                        repellat mollitia at.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti laudantium numquam voluptates
+                        eligendi provident minima error, omnis ipsum nisi minus, porro optio molestias eaque obcaecati
+                        eum incidunt illo. Minus, animi.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum eius, aperiam maxime harum
+                        omnis nemo molestiae qui at, ea hic ducimus dignissimos esse! Deserunt inventore et odit magni
+                        molestiae veniam!
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-</div>
+
+    <div class="fixedParallax" style=" margin-top: -50px;">
+
+        <div class="container mt-5" >
+            <div class="row" id="SportInfo">
+                <div class="col-sm-8">
+                    <div class="container mt-5">
+                    <!-- Sport info for each sport-->
+                    <div id="sportCarousel" class="carousel slide">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="../Images/sports-camp-11.jpg" style="float:right; width: 50%;" alt="...">
+                          
+                            <img src="../Images/sports-camp-21.jpg"  style="float:right; width: 50%;" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../Images/sports-camp-31.jpg" style="float:right; width: 50%;" alt="...">
+                          
+                            <img src="../Images/sports-camp-61.jpg" style="float:right; width: 50%;"alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#sportCarousel" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#sportCarousel" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 p-2">
+                    <h1>Sports offered at Rangeview</h1>
+                    <table class="w-100 p-1 text-center" style="font-size: 25px;">
+                        <tr>
+                            <td>
+                                Cricket
+                            </td>
+                            <td>
+                                Basket Ball
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                Softball
+                            </td>
+                            <td>
+                                Badminton
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                Table Tennis
+                            </td>
+                            <td>
+                                Rugby Union
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                Rugby League
+                            </td>
+                            <td>
+                                Football
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                Volleyball
+                            </td>
+                            <td>
+                                Athletics
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                Swimming
+                            </td>
+                            <td>
+                                Hockey
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                Kio Rahi
+                            </td>
+                            <td>
+                                Turbo Touch
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                Netball
+                            </td>
+                            <td>
+                                Dance – Hip Hop
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>Tennis</td>
+                            
+                        </tr>
+                        
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="Footer">
 
     </div>
-<script src="../Js/Script.js" ></script>
-<link href="../CSS/Style.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <script src="../Js/Script.js"></script>
+    <link href="../CSS/Style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

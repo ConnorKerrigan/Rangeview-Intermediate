@@ -10,7 +10,8 @@
 
 body {
   background-color: white;
-  padding-top: 10vh
+  padding-top: 10vh;
+  overflow-x: hidden;
 }
 
 p {
@@ -29,6 +30,16 @@ h1:after {
   width: 10%;
   border: 2px solid var(--auburn);
   margin-top: 8px;
+}
+
+table{
+  
+  margin: 10px;
+}
+
+tr p{
+  border-bottom: 1px solid #333b46;
+  padding-bottom:15px;
 }
 
 .altSection {
@@ -72,7 +83,7 @@ h1:after {
 
 .parallaxSection {
   /*background-image: url("../Images/BirdEyeCropped.jpeg");*/
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: top;
@@ -172,20 +183,20 @@ h1:after {
     animation-delay: 00ms;
   }
   .animateSlow .risePortrait:nth-child(2){
-    animation-delay: 50ms;
-  }
-  .animateSlow .risePortrait:nth-child(3){
     animation-delay: 100ms;
   }
+  .animateSlow .risePortrait:nth-child(3){
+    animation-delay: 200ms;
+  }
   .animateSlow .risePortrait:nth-child(4){
-    animation-delay: 150ms;
+    animation-delay: 300ms;
   }
 }
 
 @keyframes slideInLong {
   0% {
-    transform: translateY(4rem);
-    opacity: 1;
+    transform: translateY(6rem);
+    opacity: 0;
   }
 
   100% {
@@ -194,15 +205,15 @@ h1:after {
   }
 
   0% {
-    transform: translateY(4rem);
-    opacity: 1;
+    transform: translateY(6rem);
+    opacity: 0;
   }
 }
 
 @-webkit-keyframes slideInLong {
   0% {
     -webkit-transform: translateY(4rem);
-    -webkit-opacity: 1;
+    -webkit-opacity: 0;
   }
 
   100% {
@@ -212,7 +223,7 @@ h1:after {
 
   0% {
     -webkit-transform: translateY(4rem);
-    -webkit-opacity: 1;
+    -webkit-opacity: 0;
   }
 
 }
@@ -273,15 +284,15 @@ h1:after {
 
 
 .risePortrait{
-  width: 25vw;
-  margin:0px;
-  margin-right: -10px;
+  width: 24%;
+  margin:auto;
+
   padding:0px;
   transform: translateY(4rem);
 }
 
 .riseContainer{
-  width: 100%;
-  margin:0;
-  padding:0;
+  width: 103%;
+  margin:0%;
+  padding:0%;
 }
