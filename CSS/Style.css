@@ -23,6 +23,10 @@ h1 {
   margin: 25px 20px;
 }
 
+h1.bg-dark{
+  color: var(--platinum);
+}
+
 h1:after {
   content: '';
   display: block;
@@ -275,17 +279,20 @@ transform: translate(-50%,-100%);
 
 @media (min-width: 1199.98px) {
   .storeItem div {
-    margin-bottom: 45vh;
+    margin-bottom: 50vh;
+  }
+  .storeItem p{
+    font-size: medium;
   }
 
   .storeItem div div {
     position: absolute;
-    width: 10%;
+    width: 12%;
     transition: 0.2s;
   }
 
   .storeItem div div:hover {
-    width: 12%;
+    width: 15%;
     position: absolute;
     transform: translate(-10%, -10%);
 
