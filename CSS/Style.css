@@ -279,7 +279,7 @@ transform: translate(-50%,-100%);
 
 @media (min-width: 1199.98px) {
   .storeItem div {
-    margin-bottom: 50vh;
+    margin-bottom: 25%;
   }
   .storeItem p{
     font-size: medium;
@@ -287,15 +287,19 @@ transform: translate(-50%,-100%);
 
   .storeItem div div {
     position: absolute;
-    width: 12%;
+    width: 8vw;
     transition: 0.2s;
   }
 
   .storeItem div div:hover {
-    width: 15%;
+    width: 10vw;
     position: absolute;
     transform: translate(-10%, -10%);
 
+  }
+
+  .storeItem .noPic{
+    margin-bottom: 15%;
   }
 }
 
