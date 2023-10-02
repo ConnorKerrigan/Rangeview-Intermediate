@@ -287,12 +287,12 @@ transform: translate(-50%,-100%);
 
   .storeItem div div {
     position: absolute;
-    width: 8vw;
+    width: 10%;
     transition: 0.2s;
   }
 
   .storeItem div div:hover {
-    width: 10vw;
+    width: 12%;
     position: absolute;
     transform: translate(-10%, -10%);
 
